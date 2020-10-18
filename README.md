@@ -8,6 +8,20 @@
 
 
 
+#### Currently supported vulnerability verification:
+
+| CVE-2019-0193 | CVE-2019-17558 | CVE-2018-1723 (manual) |      |
+| ------------- | -------------- | ---------------------- | ---- |
+|               |                |                        |      |
+|               |                |                        |      |
+|               |                |                        |      |
+|               |                |                        |      |
+|               |                |                        |      |
+|               |                |                        |      |
+|               |                |                        |      |
+|               |                |                        |      |
+|               |                |                        |      |
+
 #### 🖼 Screenshot：
 
 ![](https://i.imgur.com/Rqdx6ra.png)
