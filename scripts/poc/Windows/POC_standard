@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+SHELL_FOLDER=$(cd "$(dirname "$0")";pwd)
+
+python2 $SHELL_FOLDER/cve-2019-0708.py <url>
+
+
