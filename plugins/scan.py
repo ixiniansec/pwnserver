@@ -62,7 +62,7 @@ try:
     
 except KeyboardIntruppt: 
         print("\n Exitting Program.") 
-       pass
+        pass
 except socket.gaierror: 
         print("\n Hostname Could Not Be Resolved.") 
         pass
