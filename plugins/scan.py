@@ -22,16 +22,16 @@ print("\033[1;33m [+] Target: %s\n \033[0m" %(target))
 print("\033[1;33m [+] IP location: \033[0m")
 
 ##API
-'''
+
 country = os.popen("curl -s http://ip-api.com/line/%s?fields=country"% (target) ) .read()
 city = os.popen("curl -s http://ip-api.com/line/%s?fields=city"%(target)).read()
 isp = os.popen("curl -s http://ip-api.com/line/%s?fields=isp"%(target)).read()
 print("\033[1;34m [+] Country: %s\033[0m" %(country))
 print("\033[1;34m [+] City: %s\033[0m" %(city))
 print("\033[1;34m [+] ISP: %s\033[0m" %(isp))
-'''
 
-'''
+
+
 #CMS SCAN
 
 print("\033[1;33m [+] CMS: \033[0m")
@@ -40,7 +40,7 @@ cms_tmp = os.popen('curl -s -G https://whatcms.org/API/CMS \
 --data-urlencode url="%s"'%(target)).read()
 cms = json.loads(cms_tmp)
 print(" [+]",cms['result']['name'])
-'''
+
 
 
 #PORT SCAN
