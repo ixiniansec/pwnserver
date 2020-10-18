@@ -14,4 +14,4 @@ This two file is about:
 >
 >also it give the pre-scanning result ,as IP\port\url, to the batch file. 
 
-this is the secret of the pwnserver when handling the 
+this is the secret of the pwnserver when handling the POC/EXP execute file with *different* format
