@@ -1,6 +1,8 @@
 #!/bin/env python3
 #-*- coding: utf-8 -*-
 
+# python dir scanner
+
 from functools import partial
 from threading import Thread
 from queue import Queue
