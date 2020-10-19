@@ -1,6 +1,0 @@
-#!/usr/bin/bash
-SHELL_FOLDER=$(cd "$(dirname "$0")";pwd)
-
-python3 $SHELL_FOLDER/cve-2020-0796.py <url>
-
-
