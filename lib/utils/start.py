@@ -11,10 +11,11 @@ path = os.getcwd()
 cache = (path+'/cache')
 spring = (path+'/scripts/poc/Spring')
 win = (path+'/scripts/poc/Windows')
+smb = (path+'/scripts/poc/Smb')
 
 
 
-opts,args = getopt.getopt(sys.argv[1:],'-h-w-v-t:-s-anon-c',['help','version','target','scan','showpoc','clean','spring','windows'])
+opts,args = getopt.getopt(sys.argv[1:],'-h-w-v-t:-s-anon-c',['help','version','target','scan','showpoc','clean','spring','windows','smb'])
 for opt_name,opt_value in opts:
  
   if opt_name in ('-h','--help'):
@@ -67,6 +68,9 @@ for opt_name,opt_value in opts:
        print("\033[1;35m [+] Vulnerability scan of Windows\033[0m")
        os.system("python3 %s/POC_batch_process.py"%(win))
 
+  if opt_name in ('--smb'):
+       print("\033[1;35m [+] Vulnerability scan of SMB\033[0m")
+       os.system("python3 %s/POC_batch_process.py"%(smb))
 
   if opt_name in ('-anon'):
        print("Program under development...")
