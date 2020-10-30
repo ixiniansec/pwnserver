@@ -11,6 +11,7 @@ path = os.getcwd()
 cache = (path+'/cache')
 pwn_root_path = (path+'/plugins/pwn_root_path.py')
 solrpath = (path+'/scripts/poc/Solr')
+weblogicpath = (path+'/scripts/poc/Weblogic')
 
 #GET TARGET
 f = open(cache+'/url.cache')
@@ -80,7 +81,7 @@ os.system("python3 %s %s" %(pwn_root_path,target))
 print("\033[1;33m [+] Vulnerability scan: \033[0m")
 print(" [+] Collecting necessary information, please wait...")
 print(" [+] Scanning target service information...")
-os.popen("nmap -sS -n -T5 -Pn -p 1-10000 -sV  %s > %s/nmap.cache " %(target,cache) ) .read()
+os.popen("nmap -sS -n -T5 -Pn -p- -sV  %s > %s/nmap.cache " %(target,cache) ) .read()
 os.popen("cat %s/nmap.cache | awk '/[0-9]*\/(tcp|udp)/ {print $1$4$5$6}' | sed 's/tcp//g' > %s/version.cache"%(cache,cache))
 
 ###Judging the existence of services
@@ -135,12 +136,13 @@ with open(version,'r') as foo:
 
 
 #####Weblogic
-        elif 'Weblogic' in line:
+        elif 'OracleWebLogicadmin' in line:
             print(" [+] Weblogic service exists.")
             target_info['port'] = line.split('/')[0]
             weblogic = json.dumps(target_info)
             with open(cache+'/weblogic.cache', 'w') as weblogicfile:
                 weblogicfile.write(weblogic)
+            os.system("python3 %s/POC_batch_process.py"%(weblogicpath))
 
  
  ######Nexus
