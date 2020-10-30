@@ -10,7 +10,7 @@
 
 #### ✉️️Telegram&Twitter:
 
-Telegram Group：https://t.me/Pwnserver_devloper
+Telegram Group：https://t.me/Pwnserver_developer
 
 Twitter： https://twitter.com/Acardia2020
 
