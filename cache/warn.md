@@ -1,1 +1,0 @@
-The program must be a directory, please do not delete the folder.
