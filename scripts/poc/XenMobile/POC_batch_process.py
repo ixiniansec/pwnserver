@@ -58,7 +58,7 @@ if 'token' not in key_name:
 
 
 
-os.system("sed -i '' 's/<url>/%s/g' %s/final_execute"%(target,xenmobile))
+os.system("sed -i 's/<url>/%s/g' %s/final_execute"%(target,xenmobile))
 #os.system("sed -i 's/<port>/%s/g' %s/final_execute"%(target['port'],solr))
 #os.system("sed 's/<ip>/%s/'  %s"%(solr,target['ip']))
 
