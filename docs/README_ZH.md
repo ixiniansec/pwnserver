@@ -13,20 +13,9 @@ cd pwnserver
 
 #### 使用：
 
-```bash
-sudo python3 pwnserver.py <options>
+請閱讀https://github.com/ixiniansec/pwnserver/wiki
 
-#設置掃描目標：
-sudo python3 pwnserver.py <target>
-##比如：
-sudo python3 pwnserver.py 10.10.10.123
 
-#開始掃描
-sudo python3 pwnserver.py -s
-
-#清理緩存
-sudo python3 pwnserver -c
-```
 
 #### 導入POC：
 
