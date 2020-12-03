@@ -13,20 +13,7 @@ cd pwnserver
 
 #### Usage：
 
-```bash
-sudo python3 pwnserver.py <options>
-
-#Set scan target：
-sudo python3 pwnserver.py <target>
-##such as：
-sudo python3 pwnserver.py 10.10.10.123
-
-#Start scanning
-sudo python3 pwnserver.py -s
-
-#Clear cache
-sudo python3 pwnserver -c
-```
+Please read the wiki:https://github.com/ixiniansec/pwnserver/wiki
 
 #### Import POC：
 
