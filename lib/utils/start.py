@@ -13,7 +13,7 @@ spring = (path+'/scripts/poc/Spring')
 win = (path+'/scripts/poc/Windows')
 smb = (path+'/scripts/poc/Smb')
 xenmobile= (path + '/scripts/poc/XenMobile')
-
+struts2= (path + '/scripts/poc/Struts2')
 
 opts,args = getopt.getopt(sys.argv[1:],'-h-w-v-t:-s-anon-c',['help','version','target','scan','showpoc','clean','spring','windows','smb','xenmobile'])
 for opt_name,opt_value in opts:
