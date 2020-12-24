@@ -76,6 +76,10 @@ for opt_name,opt_value in opts:
        print("\033[1;35m [+] Vulnerability scan of XenMobile\033[0m")
        os.system("python3 %s/POC_batch_process.py"%(xenmobile))
 
+  if opt_name in ('--struts2'):
+       print("\033[1;35m [+] Vulnerability scan of Struts2\033[0m")
+       os.system("python3 %s/POC_batch_process.py"%(struts2))
+
   if opt_name in ('-anon'):
        print("Program under development...")
        exit()
