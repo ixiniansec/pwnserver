@@ -49,7 +49,11 @@ sudo python3 pwnserver.py -t 127.0.0.1
 #指定服務掃描：
 sudo python3 pwnserver.py --module httpd
 
+<<<<<<< HEAD
 #錯誤寫法（這是不受支持的）：
+=======
+#您也可以寫成：
+>>>>>>> fa8afbd3de73980bc7b4a822d3215dabd8092ccc
 sudo python3 pwnserver.py -t 127.0.0.1 --module httpd
 ```
 
@@ -90,12 +94,15 @@ POC信息輸出規則：
 
 ![](https://ftp.bmp.ovh/imgs/2020/12/e254b571d494c839.jpeg)
 
+<<<<<<< HEAD
 如果新增PwnServer未收錄的POC，請這樣做：
 
 
 
 
 
+=======
+>>>>>>> fa8afbd3de73980bc7b4a822d3215dabd8092ccc
 ##### 聯繫我們：
 
 Telegram群組：https://t.me/Pwnserver_developer
