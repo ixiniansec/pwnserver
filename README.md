@@ -1,34 +1,32 @@
- 
+###PwnServer Version 1.0.2
 
-## PwnServer
+##### Update:
 
-#### 🌐️ Language：
+- Speed up port scanning
+- Modular support
+- Accurate service information scanning
+- Specify services for vulnerability scanning
+- CMS version information scan
+- Display IP address location information
+- Bugs fixed
 
-[中文](https://github.com/ixiniansec/pwnserver/blob/main/docs/README_ZH.md) 	[English](https://github.com/ixiniansec/pwnserver/blob/main/docs/README_EN.md)
+
+
+##### Readme:
+
+[中文](https://github.com/ixiniansec/pwnserver/blob/main/docs/README_CN.md)	English	Русский
 
 
 
-#### ✉️️Telegram&Twitter:
+##### Usage:
 
-Telegram Group：https://t.me/Pwnserver_developer
+Please check the project [wiki](https://github.com/ixiniansec/pwnserver/wiki/PwnServer-V1.0.2%E4%BD%BF%E7%94%A8%E6%96%87%E6%AA%94).
 
-Twitter： https://twitter.com/Acardia2020
 
-#### ⚔️Currently supported vulnerability verification:
 
-| CVE-2019-0193         | CVE-2019-17558 | CVE-2018-1723 (manual) | CVE-2019-0708(manual) |
-| --------------------- | -------------- | ---------------------- | --------------------- |
-| CVE-2020-0796(manual) | CVE-2020-14882 | CVE-2020-8209(manual)  |                       |
-|                       |                |                        |                       |
-|                       |                |                        |                       |
-|                       |                |                        |                       |
-|                       |                |                        |                       |
-|                       |                |                        |                       |
-|                       |                |                        |                       |
-|                       |                |                        |                       |
-|                       |                |                        |                       |
 
-#### 🖼 Screenshot：
 
-![](https://i.imgur.com/Rqdx6ra.png)
+
+
+
 

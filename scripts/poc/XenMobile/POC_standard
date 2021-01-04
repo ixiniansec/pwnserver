@@ -1,4 +1,0 @@
-#!/usr/bin/bash
-SHELL_FOLDER=$(cd "$(dirname "$0")";pwd)
-
-bash $SHELL_FOLDER/cve-2020-8209.sh <url>
