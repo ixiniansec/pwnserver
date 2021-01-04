@@ -1,2 +1,4 @@
 tags.lock
 cache/*
+*.pyc
+
