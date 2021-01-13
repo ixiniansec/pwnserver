@@ -100,15 +100,23 @@ python3 cve.py -t http://127.0.0.1  # ERROR
 ```
 
 如果新增PwnServer未收錄的POC，請這樣做：
+
 在developer文件夾中獲得`POC_batch_process.py`和`POC_standard`
 
+
 樣本文件以Solr服務舉例：
+
+
 12行：修改solr變量名，獲取POC文件存放路徑 （注意：POC文件夾必須首字母大寫。）；
+
 22行：修改兩個solr為新的變量名；
+
 72-73行：修改solr變量名，如果您需要更多的參數，請使用sed讀取；
+
 78行：修改solr變量名。
 
 `POC_standard`文件：
+
 輸入POC文件執行語法。
 
 
