@@ -49,6 +49,8 @@ sudo python3 pwnserver.py -t 127.0.0.1
 #指定服務掃描：
 sudo python3 pwnserver.py --module httpd
 
+您必須首先設置目標，再指定服務。
+
 #錯誤寫法（這是不受支持的）：
 sudo python3 pwnserver.py -t 127.0.0.1 --module httpd
 ```
@@ -90,10 +92,24 @@ POC信息輸出規則：
 
 ![](https://ftp.bmp.ovh/imgs/2020/12/e254b571d494c839.jpeg)
 
+**⚠️注意：POC必須不帶協議頭請求，如下：**
+```
+python3 cve.py -t 127.0.0.1   #SUCCESS
+
+python3 cve.py -t http://127.0.0.1  # ERROR
+```
+
 如果新增PwnServer未收錄的POC，請這樣做：
+在developer文件夾中獲得`POC_batch_process.py`和`POC_standard`
 
+樣本文件以Solr服務舉例：
+12行：修改solr變量名，獲取POC文件存放路徑 （注意：POC文件夾必須首字母大寫。）；
+22行：修改兩個solr為新的變量名；
+72-73行：修改solr變量名，如果您需要更多的參數，請使用sed讀取；
+78行：修改solr變量名。
 
-
+`POC_standard`文件：
+輸入POC文件執行語法。
 
 
 ##### 聯繫我們：
